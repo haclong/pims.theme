@@ -1,0 +1,68 @@
+name = hlg_pims
+description = a metro like ui
+package = core
+core = 7.x
+
+; default engine value
+;engine = phptemplate
+
+; default screenshot value
+;screenshot = screenshot.png
+
+; default regions values
+; regions[machine_readable_name] = region name
+regions[search] = Search
+;regions[header_first] = First Header
+;regions[header_second] = Second Header
+;regions[header_third] = Third Header
+;regions[header_fourth] = Fourth Header
+regions[front] = Front Page
+regions[summary] = Summary
+regions[highlighted] = Highlighted 
+regions[help] = Help 
+regions[content] = Content 
+regions[sidebar_first] = Left sidebar 
+regions[sidebar_second] = Right sidebar 
+regions[triptych_first] = Triptych first
+regions[triptych_second] = Triptych second
+regions[triptych_third] = Triptych third
+regions[footer] = Footer
+
+
+; default features values
+;features[] = logo 
+;features[] = name 
+;features[] = slogan 
+;features[] = node_user_picture 
+;features[] = comment_user_picture 
+;features[] = comment_user_verification 
+;features[] = favicon 
+;features[] = main_menu 
+;features[] = secondary_menu 
+
+; default theme settings values
+;settings[toggle_logo] = 1 
+;settings[toggle_name] = 1 
+;settings[toggle_slogan] = 1 
+;settings[toggle_node_user_picture] = 1 
+;settings[toggle_comment_user_picture] = 1 
+;settings[toggle_comment_user_verification] = 1 
+;settings[toggle_favicon] = 1 
+;settings[toggle_main_menu] = 1 
+;settings[toggle_secondary_menu] = 1 
+
+; stylesheets
+; mandatory : no default value
+stylesheets[all][] = metro/css/metro.min.css
+stylesheets[all][] = metro/css/metro-colors.min.css
+stylesheets[all][] = metro/css/metro-icons.min.css
+stylesheets[all][] = metro/css/metro-responsive.css
+stylesheets[all][] = metro/css/metro-schemes.min.css
+stylesheets[all][] = css/pims.css
+
+; scripts 
+; mandatory : no default value
+scripts[] = metro/js/metro.min.js
+
+; default php version for this theme
+; php

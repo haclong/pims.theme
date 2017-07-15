@@ -1,0 +1,126 @@
+/*@import url('https://fonts.googleapis.com/css?family=Courgette');*/
+/*@import url('https://fonts.googleapis.com/css?family=Bellefair');*/
+/*@import url('https://fonts.googleapis.com/css?family=Lora');*/
+@import url('https://fonts.googleapis.com/css?family=Lobster');
+@import url('https://fonts.googleapis.com/css?family=Raleway');
+
+/********************/
+/**     debug      **/
+/********************/
+/*header {border: 1px solid}*/
+/*footer {border: 1px dashed; }*/
+@media screen and (min-width: 1283px) {
+  .container {
+    width: 1282px;
+  }
+}
+
+#page-wrapper {margin: 0 auto}
+
+a:link {color: #00aff0}
+a:hover {color: #7ad61d}
+/*a:hover {text-decoration:underline}*/
+
+/********************/
+/**   structure    **/
+/********************/
+/*header {border: 1px solid}*/
+/*footer {border: 1px dashed; }*/
+@media screen and (min-width: 1283px) {
+  .container {
+    width: 1282px;
+  }
+}
+@media screen and (max-width: 1280px) {
+  .container {
+    width: 962px;
+  }
+}
+@media screen and (max-width: 961px) {
+  .container {
+    width: 642px;
+  }
+}
+@media screen and (max-width: 800px) {
+  .container {
+    width: 518px;
+  }
+}
+@media screen and (max-width: 517px) {
+  .container {
+    width: 258px;
+  }
+}
+
+
+/********************/
+/**     header     **/
+/********************/
+header {clear:both}
+#searchbox {float:right; margin: 1.875rem 1.25rem 0px 0px; margin: 1.1rem 1.825rem 0px 0px}
+header h1 {font-family: 'Lobster'; line-height: 1.2; font-size: 2.8rem}
+header h2 {font-family: 'Raleway'; line-height: 0.9; font-size: 1rem; color: #fa6800; font-weight: 600}
+
+#block-search-form input {border-width: 1px; border-color: #999999; color: #666666}
+#block-search-form input.form-text {padding: 0.3125rem; border-color: #999999; border-width: 1px; border-style: solid; height: 2.1rem; width:200px}
+
+/********************/
+/**   navigation   **/
+/********************/
+#navigation {margin-top: 1.875rem}
+#navigation h2 {display:none}
+#navigation a:link {color: #333333}
+#navigation a:hover {background-color: #00aff0; color: #333333; text-decoration: none}
+
+/***********************/
+/** footer-navigation **/
+/***********************/
+footer.container {clear:both; margin: 0.75rem auto 0.8rem auto; height: 20px; font-size: 0.9rem}
+#footer-navigation h2 {display:none}
+#footer-navigation li {line-height:0.8; margin-left: 1.75rem}
+#footer-navigation a:link {color: #000000}
+#footer-navigation a:hover {color:#00aff0}
+.region-footer div.block {float:left; margin-right: 2.75rem}
+
+/***********************/
+/**        main       **/
+/***********************/
+main {clear:both;}
+
+/***********************/
+/**      sidebar      **/
+/***********************/
+#sidebar {float:left ; width: 26%}
+.region-sidebar-first .block {margin-bottom: 0.5rem; padding: 0.8rem}
+.region-sidebar-first .block a:link {color : #00356a}
+.region-sidebar-first .block a:hover {color : #ffffff}
+.region-sidebar-first .block:nth-child(1) {background-color : #f0a30a} /* amber */
+.region-sidebar-first .block:nth-child(2) {background-color : #d80073} /* magenta */
+.region-sidebar-first .block:nth-child(3) {background-color : #7ad61d} /* vert */
+.region-sidebar-first .block:nth-child(4) {background-color : #fa6800} /* orange */
+.region-sidebar-first .block:nth-child(5) {background-color : #dc4fad} /* pink */
+.region-sidebar-first .block:nth-child(6) {background-color : #a4c400} /* lime */
+.region-sidebar-first .block:nth-child(7) {background-color : #ce352c} /* red */
+.region-sidebar-first .block:nth-child(8) {background-color : #aa00ff} /* violet */
+.region-sidebar-first .block:nth-child(9) {background-color : #00aff0} /* blue */
+
+
+/***********************/
+/**      content      **/
+/***********************/
+/**    page-title     **/
+#content {float:right ; width: 74%; padding-left: 2rem}
+#page-title {color: #f0a30a; /* amber */
+             color: #d80073; /* magenta */
+             color: #00aff0; /* bleu */
+             color: #7ad61d; /* vert */
+            }
+body.page-forum #page-title {color: #d80073}
+
+            
+/**    page-forum     **/
+#forum table {width:100%}
+#forum table thead tr {line-height: 2 }
+#forum table thead th {font-size: 0.97rem; background-color: #fa6800; padding: 0.25rem; border: 1px solid #ffffff}
+#forum table tbody tr {line-height: 1.6}
+#forum table tbody td {font-size: 0.9rem; padding: 0.25rem; border: 1px solid #ffffff}

@@ -1,0 +1,48 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 5 juil. 2017, 01:44:37
+    Author     : haclong
+*/
+
+@media screen and (min-width: 641px) {
+    #page-anonymous-wrapper {margin: 3rem auto; width: 520px; padding: 0px}
+    #page-anonymous-wrapper #header {padding-left: 5rem}
+    #page-anonymous-wrapper main {padding: 1.2rem 1.2rem 2rem 5rem; margin-top:3rem}
+    #page-anonymous-wrapper main h1#page-title {margin-bottom: 2rem}
+    #page-anonymous-wrapper input.form-text {width: 20rem; padding: 0.3125rem; height: 2.1rem}
+}
+@media screen and (max-width: 640px) {
+    #page-anonymous-wrapper {margin: 1rem auto; width: 520px;}
+    #page-anonymous-wrapper #header {padding-left: 6rem}
+    #page-anonymous-wrapper main {padding: 1.2rem 1.2rem 2rem 6rem; margin-top:2rem}
+    #page-anonymous-wrapper main h1#page-title {margin-bottom: 2rem}
+    #page-anonymous-wrapper input.form-text {width: 20rem; padding: 0.3125rem; height: 2.1rem}
+}
+@media screen and (max-width: 500px) {
+    #page-anonymous-wrapper {margin: 0 auto; width: 400px;}
+    #page-anonymous-wrapper #header {padding-left: 2rem}
+    #page-anonymous-wrapper main {padding: 2rem; padding-left: 3rem; margin-top:1.2rem}
+    #page-anonymous-wrapper main h1#page-title {margin-bottom: 2rem}
+    #page-anonymous-wrapper input.form-text {width: 20rem; padding: 0.3125rem; height: 2.1rem}
+}
+@media screen and (max-width: 320px) {
+    #page-anonymous-wrapper {margin: 0; width: 320px;}
+    #page-anonymous-wrapper #header {padding-left: 0}
+    #page-anonymous-wrapper main {padding: 1.2rem; padding-left: 3rem; margin-top:1.2rem}
+    #page-anonymous-wrapper main h1#page-title {margin-bottom: 2rem}
+    #page-anonymous-wrapper input.form-text {width: 16rem; padding: 0.3125rem; height: 2.1rem}
+}
+
+#page-anonymous-wrapper #header {white-space: nowrap}
+#page-anonymous-wrapper main {background-color: #f0a30a}
+#page-anonymous-wrapper main h1#page-title {color: #00356a}
+#page-anonymous-wrapper input.form-text {border-width: 1px; border-color: #999999; color: #666666}
+#page-anonymous-wrapper form#user-login div.description {visibility:hidden}
+#page-anonymous-wrapper main a:link {color:#ffffff}
+#page-anonymous-wrapper main a:hover {color:#aa00ff}
+body.page-user-password #new-password {visibility:hidden}
+
