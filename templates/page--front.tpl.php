@@ -74,38 +74,9 @@
 ?>
 <div id="page-wrapper" class="container margin20 debug">
 
-
-    <header id="header"class="margin20 no-margin-left no-margin-right">
-
-        <div id="searchbox">
-            <?php print render($page['search']); ?>
-        </div>
-        <div id="sitename">
-      <?php if ($logo): ?>
-        <a href="<?php print $front_page; ?>" title="<?php print t('Home'); ?>" rel="home" class="place-left margin10 no-margin-bottom">
-          <img src="<?php print $logo; ?>" alt="<?php print t('Home'); ?>" />
-        </a>
-      <?php endif; ?>
-
-          <?php if ($site_name): ?>
-              <h1>
-                <a href="<?php print $front_page; ?>" title="<?php print t('Home'); ?>" rel="home"><span><?php print $site_name; ?></span></a>
-              </h1>
-          <?php endif; ?>
-
-          <?php if ($site_slogan): ?>
-            <h2><?php print $site_slogan; ?></h2>
-          <?php endif; ?>
-        </div>
-
-    <?php if ($main_menu): ?>
-          <nav id="navigation">
-        <?php print theme('links__system_main_menu', array('links' => $main_menu, 'attributes' => array('id' => 'main-menu', 'class' => array('horizontal-menu')), 'heading' => t('Main menu'))); ?>
-          </nav> <!-- /#navigation -->
-    <?php endif; ?>
-
-    </header>
-    
+<?php
+    include 'header.php';
+?>
     
     <aside class="clear-float">
         <?php print $messages; ?>
@@ -123,17 +94,8 @@
     </main>
     
 
-    <footer class="container" >
-        <?php if ($secondary_menu): ?>
-            <div id="footer-navigation" class="place-right">
-                <?php print theme('links__system_secondary_menu', array('links' => $secondary_menu, 'attributes' => array('id' => 'secondary-menu', 'class' => array('no-margin', 'inline', 'clearfix')), 'heading' => t('Secondary menu'))); ?>
-            </div>
-        <?php endif; ?>
-
-        <?php if ($page['footer']): ?>
-            <?php print render($page['footer']); ?>
-        <?php endif; ?>
-            
-    </footer>
+<?php
+    include 'footer.php';
+?>
 
 </div>

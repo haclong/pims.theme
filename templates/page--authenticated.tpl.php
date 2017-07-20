@@ -73,52 +73,20 @@
  */
 ?>
 
-<div id="page-wrapper" class="container margin20 debug">
-    <header id="header"class="margin20 no-margin-left no-margin-right">
+<div id="page-wrapper" class="container margin20">
 
-        <div id="searchbox">
-            <?php print render($page['search']); ?>
-        </div>
-        <div id="sitename">
-      <?php if ($logo): ?>
-        <a href="<?php print $front_page; ?>" title="<?php print t('Home'); ?>" rel="home" class="place-left margin10 no-margin-bottom">
-          <img src="<?php print $logo; ?>" alt="<?php print t('Home'); ?>" />
-        </a>
-      <?php endif; ?>
-
-          <?php if ($site_name): ?>
-              <h1>
-                <a href="<?php print $front_page; ?>" title="<?php print t('Home'); ?>" rel="home"><span><?php print $site_name; ?></span></a>
-              </h1>
-          <?php endif; ?>
-
-          <?php if ($site_slogan): ?>
-            <h2><?php print $site_slogan; ?></h2>
-          <?php endif; ?>
-        </div>
-
-    <?php if ($main_menu): ?>
-          <nav id="navigation">
-        <?php print theme('links__system_main_menu', array('links' => $main_menu, 'attributes' => array('id' => 'main-menu', 'class' => array('horizontal-menu')), 'heading' => t('Main menu'))); ?>
-          </nav> <!-- /#navigation -->
-    <?php endif; ?>
-
-    </header>
+<?php
+    include 'header.php';
+?>
     
-    <main class="grid">
-        <div class="row cells4 cell-auto-size">
-            <div class="cell colspan1">
-      <?php if ($page['sidebar_first']): ?>
-          <?php print render($page['sidebar_first']); ?>
-      <?php endif; ?>
-            </div>
-            <div class="cell colspan3" id="content">
+    <main>
+        <div id="content">
 
             <?php print $messages; ?>
                 
             <a id="main-content"></a>
             <?php print render($title_prefix); ?>
-            <?php if ($title): ?><h1 class="title" id="page-title"><?php print $title; ?></h1><?php endif; ?>
+            <?php if ($title): ?><h2 class="title" id="page-title"><?php print $title; ?> <span class="mif-chevron-right"/></h2><?php endif; ?>
             <?php print render($title_suffix); ?>
             <?php if ($tabs): ?><div class="tabs"><?php print render($tabs); ?></div><?php endif; ?>
             <?php print render($page['help']); ?>
@@ -126,79 +94,19 @@
             <?php print render($page['content']); ?>
             <?php print $feed_icons; ?>
 
-            </div>
         </div>
+
+
+        <?php if ($page['sidebar_first']): ?>
+            <?php print render($page['sidebar_first']); ?>
+        <?php endif; ?>
     </main>
     
+<?php
+    include 'footer.php';
+?>
 
-    <footer class="container" >
-        <?php if ($secondary_menu): ?>
-            <div id="footer-navigation" class="place-right">
-                <?php print theme('links__system_secondary_menu', array('links' => $secondary_menu, 'attributes' => array('id' => 'secondary-menu', 'class' => array('no-margin', 'inline', 'clearfix')), 'heading' => t('Secondary menu'))); ?>
-            </div>
-        <?php endif; ?>
-
-        <?php if ($page['footer']): ?>
-            <?php print render($page['footer']); ?>
-        <?php endif; ?>
-            
-    </footer>
 
 </div>
 
-
-
-
-    <div>
-    <div id="page">
-    
-    <!-- highlighted -->
-    <div class="row cell-auto-size">
-        <div class="cell collspan12" id="highlighted">
-            
-        <?php if ($page['highlighted']): ?><div id="highlighted"><?php print render($page['highlighted']); ?></div><?php endif; ?>
-            
-        </div>
-    </div> <!-- /highlighted -->
-    
-    
-    <?php if (!$breadcrumb): ?>
-      <div class="row cell-auto-size">
-          <div class="cell colspan12" id="breadcrumb">
-            <?php print $breadcrumb; ?>
-          </div> <!-- /#breadcrmb -->
-      </div>
-    <?php endif; ?>
-      
-      <!-- main wrapper -->
-    <div class="row cell-auto-size" id="main-wrapper">
-
-       
-        <div class="cell">
-        </div>
-
-    </div><!-- /#main-wrapper -->
-
-    <!-- tryptique -->
-    <div class="row cell-auto-size">
-        <div class="cell colspan4">
-            tryptic_first
-        <?php if ($page['triptych_first']): ?><div id="triptych_first"><?php print render($page['triptych_first']); ?></div><?php endif; ?>
-            
-        </div>
-
-        <div class="cell colspan4">
-            tryptic_second
-        <?php if ($page['triptych_second']): ?><div id="triptych_second"><?php print render($page['triptych_second']); ?></div><?php endif; ?>
-            
-        </div>
-
-        <div class="cell colspan4">
-            tryptic_third
-        <?php if ($page['triptych_third']): ?><div id="triptych_third"><?php print render($page['triptych_third']); ?></div><?php endif; ?>
-            
-        </div>
-    </div> <!-- /tryptique -->
-        </div> <!-- /#page -->
-    </div> <!-- /#page-wrapper -->
 

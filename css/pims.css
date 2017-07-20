@@ -1,6 +1,6 @@
 /*@import url('https://fonts.googleapis.com/css?family=Courgette');*/
 /*@import url('https://fonts.googleapis.com/css?family=Bellefair');*/
-/*@import url('https://fonts.googleapis.com/css?family=Lora');*/
+@import url('https://fonts.googleapis.com/css?family=Lora');
 @import url('https://fonts.googleapis.com/css?family=Lobster');
 @import url('https://fonts.googleapis.com/css?family=Raleway');
 
@@ -9,16 +9,13 @@
 /********************/
 /*header {border: 1px solid}*/
 /*footer {border: 1px dashed; }*/
-@media screen and (min-width: 1283px) {
-  .container {
-    width: 1282px;
-  }
-}
+
 
 #page-wrapper {margin: 0 auto}
 
 a:link {color: #00aff0}
 a:hover {color: #7ad61d}
+h1 {font-family: 'Lobster'}
 /*a:hover {text-decoration:underline}*/
 
 /********************/
@@ -58,8 +55,11 @@ a:hover {color: #7ad61d}
 /********************/
 header {clear:both}
 #searchbox {float:right; margin: 1.875rem 1.25rem 0px 0px; margin: 1.1rem 1.825rem 0px 0px}
-header h1 {font-family: 'Lobster'; line-height: 1.2; font-size: 2.8rem}
-header h2 {font-family: 'Raleway'; line-height: 0.9; font-size: 1rem; color: #fa6800; font-weight: 600}
+h1.leader {font-family: 'Lobster'; font-size: 2.8rem; line-height: 1.2}
+h1.leader .small {display:block ; font-family: 'Raleway'; line-height: 0.9; font-size: 1rem; color: #fa6800; font-weight: 600}
+h1.leader a:link {color: #00aff0}
+h1.leader a:hover {color: #7ad61d}
+
 
 #block-search-form input {border-width: 1px; border-color: #999999; color: #666666}
 #block-search-form input.form-text {padding: 0.3125rem; border-color: #999999; border-width: 1px; border-style: solid; height: 2.1rem; width:200px}
@@ -75,7 +75,7 @@ header h2 {font-family: 'Raleway'; line-height: 0.9; font-size: 1rem; color: #fa
 /***********************/
 /** footer-navigation **/
 /***********************/
-footer.container {clear:both; margin: 0.75rem auto 0.8rem auto; height: 20px; font-size: 0.9rem}
+footer.container {clear:both; font-size: 0.9rem; padding: 0.75rem 0 0.8rem 0}
 #footer-navigation h2 {display:none}
 #footer-navigation li {line-height:0.8; margin-left: 1.75rem}
 #footer-navigation a:link {color: #000000}
@@ -90,7 +90,7 @@ main {clear:both;}
 /***********************/
 /**      sidebar      **/
 /***********************/
-#sidebar {float:left ; width: 26%}
+.region-sidebar-first {float:left ; width: 26%}
 .region-sidebar-first .block {margin-bottom: 0.5rem; padding: 0.8rem}
 .region-sidebar-first .block a:link {color : #00356a}
 .region-sidebar-first .block a:hover {color : #ffffff}
@@ -109,18 +109,22 @@ main {clear:both;}
 /**      content      **/
 /***********************/
 /**    page-title     **/
-#content {float:right ; width: 74%; padding-left: 2rem}
+#content {float:right ; width: 74%; padding-left: 2rem;}
 #page-title {color: #f0a30a; /* amber */
              color: #d80073; /* magenta */
              color: #00aff0; /* bleu */
              color: #7ad61d; /* vert */
+             color: #fa6800; /* orange */
+             padding-bottom: 2rem;
+             /*font-family: 'Lobster';*/
+             
             }
-body.page-forum #page-title {color: #d80073}
+body.page-forum #page-title {color: #fa6800}
 
             
 /**    page-forum     **/
 #forum table {width:100%}
-#forum table thead tr {line-height: 2 }
-#forum table thead th {font-size: 0.97rem; background-color: #fa6800; padding: 0.25rem; border: 1px solid #ffffff}
+#forum table thead tr {line-height: 1.6 }
+#forum table thead th {font-size: 0.87rem; background-color: #fa6800; color: #ffffff; padding: 0.25rem 0.40rem; border: 1px solid #ffffff}
 #forum table tbody tr {line-height: 1.6}
-#forum table tbody td {font-size: 0.9rem; padding: 0.25rem; border: 1px solid #ffffff}
+#forum table tbody td {font-size: 0.80rem; padding: 0.25rem 0.40rem ; border: 1px solid #ffffff}
