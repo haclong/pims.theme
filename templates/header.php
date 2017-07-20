@@ -1,9 +1,9 @@
 <?php
 
 ?>
-    <header id="header"class="margin20 no-margin-left no-margin-right">
+    <header id="header" class="clear-float margin20 no-margin-left no-margin-right">
 
-        <div id="searchbox">
+        <div id="searchbox" class="place-right">
             <?php print render($page['search']); ?>
         </div>
         <div id="sitename">
@@ -25,7 +25,7 @@
         </div>
 
     <?php if ($main_menu): ?>
-          <nav id="navigation">
+          <nav id="navigation" class="margin30 no-margin-left no-margin-right no-margin-bottom">
         <?php print theme('links__system_main_menu', array('links' => $main_menu, 'attributes' => array('id' => 'main-menu', 'class' => array('horizontal-menu')), 'heading' => t('Main menu'))); ?>
           </nav> <!-- /#navigation -->
     <?php endif; ?>
