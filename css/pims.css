@@ -18,6 +18,7 @@ a:hover {color: #7ad61d}
 h1 {font-family: 'Lobster'}
 /*a:hover {text-decoration:underline}*/
 
+
 /********************/
 /**   structure    **/
 /********************/
@@ -113,3 +114,12 @@ body.page-forum #page-title {color: #fa6800}
 #forum table tbody tr {line-height: 1.6}
 #forum table tbody td {font-size: 0.80rem; padding: 0.25rem 0.40rem ; border: 1px solid #ffffff}
 
+/***********************/
+/**      comment      **/
+/***********************/
+section.comment .user-picture {margin: 0.40rem}
+section.comment .comment-aside {background-color: #1ba1e2; width:30%}
+section.comment .comment-aside a:link {color: #ffff00}
+section.comment .comment-aside a:hover {color: #666666}
+section.comment .comment-body {background-color: #e8f1f4; width:70%}
+section.comment .comment-body h4 {display:inline}

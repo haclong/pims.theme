@@ -1,4 +1,4 @@
-name = hlg_pims
+name = Pims
 description = a metro like ui
 package = core
 core = 7.x

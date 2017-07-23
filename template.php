@@ -81,3 +81,12 @@ function pims_preprocess_maintenance_page(&$vars) {
         )
     ) ;
 }
+
+/**
+ * Add line breaks to field
+ */
+//function pims_preprocess_field(&$vars, $hook) {
+//    if(($vars['element']['#field_type'] == 'text_long' || $vars['element']['#field_type'] == 'text_with_summary')) {
+//        $vars['items'][0]['#markup'] = "nl2br" . nl2br($vars['items'][0]['#markup']);
+//    }
+//}
