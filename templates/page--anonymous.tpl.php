@@ -108,6 +108,6 @@
             <?php if ($action_links): ?><ul class="action-links"><?php print render($action_links); ?></ul><?php endif; ?>
             <?php print render($page['content']); ?>
             <div id="new-password"><a href="?q=user/password"><?php print t('Request new password') ; ?></a></div>
-
+            
     </main>
 </div>
