@@ -86,7 +86,7 @@ footer.container {font-size: 0.9rem}
 /***********************/
 /**      sidebar      **/
 /***********************/
-.region-sidebar-first .block {margin-bottom: 0.5rem; padding: 0.8rem}
+.region-sidebar-first .block {margin-bottom: 1.2rem; padding: 0.8rem}
 .region-sidebar-first .block a:link {color : #00356a}
 .region-sidebar-first .block a:hover {color : #ffffff}
 .region-sidebar-first .block:nth-child(1) {background-color : #f0a30a} /* amber */
@@ -123,3 +123,12 @@ section.comment .comment-aside a:link {color: #ffff00}
 section.comment .comment-aside a:hover {color: #666666}
 section.comment .comment-body {background-color: #e8f1f4; width:70%}
 section.comment .comment-body h4 {display:inline}
+
+
+/***************************/
+/**      views-table      **/
+/***************************/
+.views-table {margin-top: 1.2rem}
+.views-table thead tr {line-height: 1.6 }
+.views-table thead th {font-size: 0.87rem; background-color: #fa6800; color: #ffffff; padding: 0.25rem 0.40rem; border: 1px solid #ffffff}
+.views-table td {padding:8px}

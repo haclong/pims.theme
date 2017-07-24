@@ -78,22 +78,21 @@
 
         <div id="sitename">
       <?php if ($logo): ?>
-        <a href="<?php print $front_page; ?>" title="<?php print t('Home'); ?>" rel="home" class="place-left margin10 no-margin-bottom">
+        <span class="place-left margin10 no-margin-bottom">
           <img src="<?php print $logo; ?>" alt="<?php print t('Home'); ?>" />
-        </a>
+        </span>
       <?php endif; ?>
 
           <?php if ($site_name): ?>
-              <h1>
-                <a href="<?php print $front_page; ?>" title="<?php print t('Home'); ?>" rel="home"><span><?php print $site_name; ?></span></a>
+              <h1 class="leader">
+                <span><?php print $site_name; ?></span>
+                <?php if ($site_slogan): ?>
+                    <span class="small"><?php print $site_slogan; ?></span>
+                <?php endif; ?>
               </h1>
           <?php endif; ?>
 
-          <?php if ($site_slogan): ?>
-            <h2><?php print $site_slogan; ?></h2>
-          <?php endif; ?>
         </div>
-
 
     </header>
     
@@ -103,7 +102,7 @@
                 
             <a id="main-content"></a>
             <?php print render($title_prefix); ?>
-            <?php if ($title): ?><h1 class="title" id="page-title"><?php print $title; ?></h1><?php endif; ?>
+            <?php if ($title): ?><h2 class="title" id="page-title"><?php print $title; ?> <span class="mif-chevron-right"/></h2><?php endif; ?>
             <?php print render($title_suffix); ?>
             <?php print render($page['help']); ?>
             <?php if ($action_links): ?><ul class="action-links"><?php print render($action_links); ?></ul><?php endif; ?>

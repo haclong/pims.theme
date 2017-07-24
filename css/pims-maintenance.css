@@ -2,20 +2,24 @@
 @media screen and (min-width: 641px) {
     .maintenance-page #page-wrapper {margin: 3rem auto; width: 520px; padding: 0px}
     .maintenance-page main {padding: 1.2rem 1.2rem 2rem 5rem; margin-top:3rem}
-    .maintenance-page main h1#page-title {margin-bottom: 2rem}
+    .maintenance-page main h2#page-title {margin-bottom: 2rem}
 }
 @media screen and (max-width: 640px) {
     .maintenance-page #page-wrapper {margin: 1rem auto; width: 520px;}
-    .maintenance-page main {padding: 1.2rem 1.2rem 2rem 6rem; margin-top:2rem}
-    .maintenance-page main h1#page-title {margin-bottom: 2rem}
+    .maintenance-page main {padding: 1.2rem 1.2rem 2rem 6rem; margin-top:3rem}
+    .maintenance-page main h2#page-title {margin-bottom: 2rem}
 }
 @media screen and (max-width: 500px) {
     .maintenance-page #page-wrapper {margin: 0 auto; width: 400px;}
-    .maintenance-page main {padding: 2rem; padding-left: 3rem; margin-top:1.2rem}
-    .maintenance-page main h1#page-title {margin-bottom: 2rem}
+    .maintenance-page main {padding: 2rem; padding-left: 3rem; margin-top:3rem}
+    .maintenance-page main h2#page-title {margin-bottom: 2rem}
 }
 @media screen and (max-width: 320px) {
-    .maintenance-page #page-wrapper {margin: 0; width: 320px;}
-    .maintenance-page main {padding: 1.2rem; padding-left: 3rem; margin-top:1.2rem}
-    .maintenance-page main h1#page-title {margin-bottom: 2rem}
+    .maintenance-page #page-wrapper {margin: 0; width: 100%;}
+    .maintenance-page main {padding: 1.2rem 1.2rem 3rem 3rem; margin-top:3rem}
+    .maintenance-page main h2#page-title {margin-bottom: 2rem}
 }
+
+.maintenance-page h1.leader {; color: #00aff0}
+.maintenance-page main {background-color: #f0a30a}
+.maintenance-page main h2#page-title {color: #00356a}
