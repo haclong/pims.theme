@@ -77,13 +77,13 @@
 <?php
     include 'header.php';
 ?>
-    
+   
     <aside class="clear-float">
         <?php print $messages; ?>
         <?php print render($page['help']); ?>
     </aside>
     
-    <main class="clear-float">
+    <main class="clear-float margin50 no-margin-left no-margin-right no-margin-bottom">
         <?php print render($title_prefix); ?>
         <?php if ($title): ?><h1 class="title" id="page-title"><?php print $title; ?></h1><?php endif; ?>
         <?php print render($title_suffix); ?>

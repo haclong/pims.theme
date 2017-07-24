@@ -1,7 +1,7 @@
 <?php
 
 ?>
-    <header id="header" class="clear-float margin20 no-margin-left no-margin-right">
+    <header id="header" class="clear-float margin20 no-margin-left no-margin-right no-margin-bottom">
 
         <div id="searchbox" class="place-right">
             <?php print render($page['search']); ?>

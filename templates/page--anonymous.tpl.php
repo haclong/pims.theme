@@ -85,7 +85,7 @@
 
           <?php if ($site_name): ?>
               <h1 class="leader">
-                <span><?php print $site_name; ?></span>
+                <span class="fg-blue"><?php print $site_name; ?></span>
                 <?php if ($site_slogan): ?>
                     <span class="small"><?php print $site_slogan; ?></span>
                 <?php endif; ?>
@@ -96,13 +96,13 @@
 
     </header>
     
-    <main>
+    <main class="clear-float margin50 no-margin-left no-margin-right no-margin-bottom bg-amber">
 
             <?php print $messages; ?>
                 
             <a id="main-content"></a>
             <?php print render($title_prefix); ?>
-            <?php if ($title): ?><h2 class="title" id="page-title"><?php print $title; ?> <span class="mif-chevron-right"/></h2><?php endif; ?>
+            <?php if ($title): ?><h2 class="title fg-darkCobalt" id="page-title"><?php print $title; ?> <span class="mif-chevron-right"/></h2><?php endif; ?>
             <?php print render($title_suffix); ?>
             <?php print render($page['help']); ?>
             <?php if ($action_links): ?><ul class="action-links"><?php print render($action_links); ?></ul><?php endif; ?>

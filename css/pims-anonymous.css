@@ -38,9 +38,6 @@ and open the template in the editor.
 }
 
 #page-anonymous-wrapper #header {white-space: nowrap}
-#page-anonymous-wrapper h1.leader {color: #00aff0}
-#page-anonymous-wrapper main {background-color: #f0a30a}
-#page-anonymous-wrapper main h2#page-title {color: #00356a}
 #page-anonymous-wrapper input.form-text {border-width: 1px; border-color: #999999; color: #666666}
 #page-anonymous-wrapper form#user-login div.description {visibility:hidden}
 #page-anonymous-wrapper main a:link {color:#ffffff}

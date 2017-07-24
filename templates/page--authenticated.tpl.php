@@ -79,7 +79,7 @@
     include 'header.php';
 ?>
     
-    <main class="grid clear-float">
+    <main class="grid clear-float margin50 no-margin-left no-margin-right no-margin-bottom">
         <div class="row cells4">
             <div id="content" class="cell colspan3 padding30 no-padding-top no-padding-right no-padding-bottom place-right">
 
