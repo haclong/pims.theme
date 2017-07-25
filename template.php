@@ -18,14 +18,14 @@ function pims_preprocess_html(&$vars) {
         ) ;
     }
     
-    if($vars['is_front'])
-    {
-        drupal_add_css(
-            path_to_theme() . '/css/pims-front.css', 
-            array('group' => CSS_THEME, 'every_page' => FALSE
-            )
-        ) ;
-    }
+//    if($vars['is_front'])
+//    {
+//        drupal_add_css(
+//            path_to_theme() . '/css/pims-front.css', 
+//            array('group' => CSS_THEME, 'every_page' => FALSE
+//            )
+//        ) ;
+//    }
     
     // Setup IE meta tag to force IE rendering mode
     $meta_viewport = array(
@@ -61,9 +61,9 @@ function pims_preprocess_region(&$vars) {
         $vars['classes_array'][] = 'tile-group' ;
         $vars['classes_array'][] = 'no-margin' ;
         $vars['classes_array'][] = 'no-padding' ;
-    } else {
-        $vars['classes_array'][] = 'place-left' ;
-        $vars['classes_array'][] = 'cell' ;
+//    } else {
+//        $vars['classes_array'][] = 'place-left' ;
+//        $vars['classes_array'][] = 'cell' ;
     }
 }
 

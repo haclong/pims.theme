@@ -8,39 +8,37 @@ and open the template in the editor.
     Author     : haclong
 */
 
-@media screen and (min-width: 641px) {
-    #page-anonymous-wrapper {margin: 3rem auto; width: 520px; padding: 0px}
-    #page-anonymous-wrapper #header {padding-left: 5rem}
-    #page-anonymous-wrapper main {padding: 1.2rem 1.2rem 2rem 5rem}
-    #page-anonymous-wrapper main h2#page-title {margin-bottom: 2rem}
-    #page-anonymous-wrapper input.form-text {width: 20rem; padding: 0.3125rem; height: 2.1rem}
+main {margin-top: 3rem}
+
+@media screen and (min-width: 561px) {
+    .container {margin: 3rem auto; width: 520px}
+    header {padding-left: 6rem}
+    main {padding: 2rem 2rem 4rem 7rem}
+    input.form-text {width: 300px}
 }
-@media screen and (max-width: 640px) {
-    #page-anonymous-wrapper {margin: 1rem auto; width: 520px;}
-    #page-anonymous-wrapper #header {padding-left: 4rem}
-    #page-anonymous-wrapper main {padding: 2rem 2rem 3rem 7rem;}
-    #page-anonymous-wrapper main h2#page-title {margin-bottom: 2rem}
-    #page-anonymous-wrapper input.form-text {width: 20rem; padding: 0.3125rem; height: 2.1rem}
+@media screen and (max-width: 560px) {
+    .container {margin: 2rem auto ; width: 400px}
+    header {padding-left: 3rem}
+    main {padding: 3rem}
+    input.form-text {width: 300px}
 }
-@media screen and (max-width: 500px) {
-    #page-anonymous-wrapper {margin: 0 auto; width: 400px;}
-    #page-anonymous-wrapper #header {padding-left: 3rem}
-    #page-anonymous-wrapper main {padding: 2rem 2rem 3rem 4rem; color: #000000}
-    #page-anonymous-wrapper main h2#page-title {margin-bottom: 2rem}
-    #page-anonymous-wrapper input.form-text {width: 20rem; padding: 0.3125rem; height: 2.1rem}
+@media screen and (max-width: 430px) {
+    .container {margin: 1rem auto; width: 300px}
+    header {padding-left: 1rem}
+    main {padding: 2rem}
+    input.form-text {width: 230px}
 }
 @media screen and (max-width: 320px) {
-    #page-anonymous-wrapper {margin: 0; width: 100%;}
-    #page-anonymous-wrapper #header {padding-left: 0}
-    #page-anonymous-wrapper main {padding: 1.2rem 1.2rem 3rem 3rem}
-    #page-anonymous-wrapper main h2#page-title {margin-bottom: 2rem}
-    #page-anonymous-wrapper input.form-text {width: 16rem; padding: 0.3125rem; height: 2.1rem}
+    .container {margin: 0; width: 100%}
+    header {padding-left: 0}
+    main {padding: 1.4rem}
+    h2 {font-size: 1.8rem}
+    input.form-text {width: 220px}
 }
-
-#page-anonymous-wrapper #header {white-space: nowrap}
-#page-anonymous-wrapper input.form-text {border-width: 1px; border-color: #999999; color: #666666}
-#page-anonymous-wrapper form#user-login div.description {visibility:hidden}
-#page-anonymous-wrapper main a:link {color:#ffffff}
-#page-anonymous-wrapper main a:hover {color:#aa00ff}
+.container header {white-space: nowrap}
+h2 {margin-bottom: 2rem}
+input.form-text {border-width: 1px; border-color: #999999; color: #666666; padding: 0.3125rem; height: 2.1rem}
+div.description {visibility:hidden}
+main a:link {color:#ffffff}
+main a:hover {color:#aa00ff}
 body.page-user-password #new-password {visibility:hidden}
-
