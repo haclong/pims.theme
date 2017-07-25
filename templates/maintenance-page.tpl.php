@@ -26,9 +26,9 @@
     <a href="#main-content" class="element-invisible element-focusable"><?php print t('Skip to main content'); ?></a>
   </div>
 
-  <div id="page-wrapper" class="container margin20">
+  <div id="page-wrapper" class="container">
 
-    <header id="header" class="margin20 no-margin-left no-margin-right">
+    <header id="header">
 
         <div id="sitename">
       <?php if ($logo): ?>
@@ -41,7 +41,7 @@
             <h1 class="leader">
                 <span class="fg-blue"><?php print $site_name; ?></span>
                 <?php if ($site_slogan): ?>
-                    <span class="small"><?php print $site_slogan; ?></span>
+                    <span class="small fg-orange"><?php print $site_slogan; ?></span>
                 <?php endif; ?>
             </h1>
           <?php endif; ?>
@@ -50,7 +50,7 @@
 
     </header>
 
-    <main class="clear-float margin50 no-margin-left no-margin-right no-margin-bottom bg-amber">
+    <main class="clear-float bg-amber">
 
             <?php print $messages; ?>
                 

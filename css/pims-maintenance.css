@@ -1,25 +1,26 @@
-
-@media screen and (min-width: 641px) {
-    .maintenance-page #page-wrapper {margin: 3rem auto; width: 520px; padding: 0px}
-    .maintenance-page main {padding: 1.2rem 1.2rem 2rem 5rem}
-    .maintenance-page main h2#page-title {margin-bottom: 2rem}
+@media screen and (min-width: 561px) {
+    .container {margin: 3rem auto; width: 520px}
+    header {padding-left: 4rem}
+    main {padding: 2rem 2rem 4rem 4rem}
 }
-@media screen and (max-width: 640px) {
-    .maintenance-page #page-wrapper {margin: 1rem auto; width: 520px;}
-    .maintenance-page main {padding: 1.2rem 1.2rem 2rem 6rem}
-    .maintenance-page main h2#page-title {margin-bottom: 2rem}
+@media screen and (max-width: 560px) {
+    .container {margin: 2rem auto ; width: 400px}
+    header {padding-left: 3rem}
+    main {padding: 3rem}
 }
-@media screen and (max-width: 500px) {
-    .maintenance-page #page-wrapper {margin: 0 auto; width: 400px;}
-    .maintenance-page main {padding: 2rem; padding-left: 3rem}
-    .maintenance-page main h2#page-title {margin-bottom: 2rem}
+@media screen and (max-width: 430px) {
+    .container {margin: 1rem auto; width: 300px}
+    header {padding-left: 1rem}
+    main {padding: 2rem}
 }
 @media screen and (max-width: 320px) {
-    .maintenance-page #page-wrapper {margin: 0; width: 100%;}
-    .maintenance-page main {padding: 1.2rem 1.2rem 3rem 3rem}
-    .maintenance-page main h2#page-title {margin-bottom: 2rem}
+    .container {margin: 0; width: 100%}
+    header {padding-left: 0}
+    main {padding: 1.4rem}
+    h2 {font-size: 1.8rem}
 }
 
-.maintenance-page h1.leader {; color: #00aff0}
-.maintenance-page main {background-color: #f0a30a}
-.maintenance-page main h2#page-title {color: #00356a} 
+.container header {white-space: nowrap}
+h1.leader {color: #00aff0}
+h2 {margin-bottom: 2rem}
+

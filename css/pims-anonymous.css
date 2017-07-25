@@ -7,9 +7,6 @@ and open the template in the editor.
     Created on : 5 juil. 2017, 01:44:37
     Author     : haclong
 */
-
-main {margin-top: 3rem}
-
 @media screen and (min-width: 561px) {
     .container {margin: 3rem auto; width: 520px}
     header {padding-left: 6rem}
