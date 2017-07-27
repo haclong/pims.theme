@@ -18,14 +18,14 @@ function pims_preprocess_html(&$vars) {
         ) ;
     }
     
-//    if($vars['is_front'])
-//    {
-//        drupal_add_css(
-//            path_to_theme() . '/css/pims-front.css', 
-//            array('group' => CSS_THEME, 'every_page' => FALSE
-//            )
-//        ) ;
-//    }
+    if($vars['is_front'])
+    {
+        drupal_add_css(
+            path_to_theme() . '/css/pims-front.css', 
+            array('group' => CSS_THEME, 'every_page' => FALSE
+            )
+        ) ;
+    }
     
     // Setup IE meta tag to force IE rendering mode
     $meta_viewport = array(
@@ -39,6 +39,14 @@ function pims_preprocess_html(&$vars) {
   
     // Add header meta tag for IE to head
     drupal_add_html_head($meta_viewport, 'meta_viewport');
+}
+
+function pims_preprocess_maintenance_page(&$vars) {
+    drupal_add_css(
+        path_to_theme() . '/css/pims-maintenance.css', 
+        array('group' => CSS_THEME, 'every_page' => FALSE
+        )
+    ) ;
 }
 
 function pims_preprocess_page(&$vars) {
@@ -74,13 +82,6 @@ function pims_preprocess_block(&$vars) {
     }
 }
 
-function pims_preprocess_maintenance_page(&$vars) {
-    drupal_add_css(
-        path_to_theme() . '/css/pims-maintenance.css', 
-        array('group' => CSS_THEME, 'every_page' => FALSE
-        )
-    ) ;
-}
 
 /**
  * Add line breaks to field
