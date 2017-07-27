@@ -62,8 +62,8 @@
         <div class="comment-aside padding10">
             <?php print $picture; ?>
             
-            <div class="text-defaut"><span class="mif-user fg-white"></span> <?php print $author; ?></div>
-            <div class="fg-white text-secondary"><span class="mif-history fg-white"></span> <?php print $created; ?></div>
+            <div class="text-defaut"><span class="mif-user"></span> <?php print $author; ?></div>
+            <div class="text-secondary"><span class="mif-history"></span> <?php print $created; ?></div>
         </div>
         <div class="comment-body block-shadow padding20 popover marker-on-left">
             <h4 class="title no-margin-top" <?php print $title_attributes; ?>>

@@ -33,7 +33,8 @@ and open the template in the editor.
     input.form-text {width: 220px}
 }
 .container header {white-space: nowrap}
-h2 {margin-bottom: 2rem}
+main {background-color: #f0a30a}
+h2 {margin-bottom: 2rem; color: #00356a; color: #81003c}
 input.form-text {border-width: 1px; border-color: #999999; color: #666666; padding: 0.3125rem; height: 2.1rem}
 div.description {visibility:hidden}
 main a:link {color:#ffffff}

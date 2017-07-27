@@ -61,9 +61,9 @@ function pims_preprocess_region(&$vars) {
         $vars['classes_array'][] = 'tile-group' ;
         $vars['classes_array'][] = 'no-margin' ;
         $vars['classes_array'][] = 'no-padding' ;
-//    } else {
-//        $vars['classes_array'][] = 'place-left' ;
-//        $vars['classes_array'][] = 'cell' ;
+    } elseif($vars['region'] == 'sidebar_first') {
+        $vars['classes_array'][] = 'place-left' ;
+        $vars['classes_array'][] = 'cell' ;
     }
 }
 

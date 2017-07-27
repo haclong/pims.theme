@@ -79,7 +79,7 @@
     include 'header.php';
 ?>
     
-    <main class="grid clear-float margin50 no-margin-left no-margin-right no-margin-bottom">
+    <main class="grid clear-float">
         <div class="row cells4">
             <div id="content" class="cell colspan3 padding30 no-padding-top no-padding-right no-padding-bottom place-right">
 
@@ -87,7 +87,7 @@
                 
             <a id="main-content"></a>
             <?php print render($title_prefix); ?>
-            <?php if ($title): ?><h2 class="title fg-orange padding20 no-padding-left no-padding-right no-padding-top" id="page-title"><?php print $title; ?> <span class="mif-chevron-right"/></h2><?php endif; ?>
+            <?php if ($title): ?><h2 class="title" id="page-title"><?php print $title; ?> <span class="mif-chevron-right"/></h2><?php endif; ?>
             <?php print render($title_suffix); ?>
             <?php if ($tabs): ?><div class="tabs"><?php print render($tabs); ?></div><?php endif; ?>
             <?php print render($page['help']); ?>
